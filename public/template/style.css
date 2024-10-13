@@ -1,0 +1,118 @@
+/*input {*/
+/*    text-transform: none; !* Đảm bảo chữ không bị biến thành in hoa *!*/
+/*}*/
+
+
+.id-card-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.id-card-image img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.id-card-details {
+    text-align: justify;
+}
+
+.id-card-details p {
+    margin: 5px 0;
+}
+
+.custom-file-label {
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.custom-file-label i {
+    margin-right: 8px; /* Tạo khoảng cách giữa icon và văn bản */
+}
+
+.custom-file-input {
+    cursor: pointer;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+
+/* Loại bỏ nút "Browse" mặc định */
+.custom-file-input::-webkit-file-upload-button {
+    display: none;
+}
+
+.custom-file-input::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.custom-file-label::after {
+    display: none !important;
+}
+
+.image-cccd {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-chuyen-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px !important;
+    transition: all 0.3s ease; /* Thêm chuyển động mượt */
+    background-color: #ffffff;
+}
+
+.nav-function {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px !important;
+    transition: all 0.3s ease; /* Thêm chuyển động mượt */
+}
+
+.nav-function:hover,
+.nav-chuyen-tab:hover {
+    background-color: #f0f0f0; /* Thay đổi màu nền khi hover */
+    border-color: #007bff;     /* Thay đổi màu viền */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng đổ */
+    transform: scale(1.05);    /* Phóng to nhẹ khi hover */
+}
+
+
+
+.col-md-3 {
+    display: flex !important;
+    justify-content: center !important;
+}
+
